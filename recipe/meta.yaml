@@ -1,5 +1,5 @@
 {% set name = "imdclient" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/imdclient-{{ version }}.tar.gz
-  sha256: 59abe646226fbe0de9112acb58ca6e87e00222b58a966410c5c7daa424c4b7e8
+  sha256: c34fe4e2efb13427611ff319d051e24475d190393d3c46edde1389d8ac374d1a
 
 build:
   noarch: python
@@ -22,7 +22,6 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - mdanalysis >=2.7.0
 
 test:
   imports:
@@ -44,7 +43,7 @@ about:
     Version numbers in IMD are monotonically increasing integers. 
     IMDv3, the protocol version described in this document, builds upon IMDv2, which is implemented at the time of writing in NAMD, VMD, GROMACS, and LAMMPS.
     IMDv2 is itself a modification of the original IMD protocol published in 2001.
-  doc_url: https://imdclient.readthedocs.io/en/latest/protocol_v3.html
+  doc_url: https://imdclient.readthedocs.io
   dev_url: https://github.com/Becksteinlab/imdclient
 
 extra:
@@ -53,3 +52,4 @@ extra:
     - ljwoods2
     - amruthesht
     - orbeckst
+
