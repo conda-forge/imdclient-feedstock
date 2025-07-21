@@ -11,7 +11,7 @@ Summary: Receiver for IMD v2 and v3 data from simulation engines like Gromacs, L
 
 Development: https://github.com/Becksteinlab/imdclient
 
-Documentation: https://imdclient.readthedocs.io/en/latest/protocol_v3.html
+Documentation: https://imdclient.readthedocs.io
 
 IMD (Interactive Molecular Dynamics) is a protocol for communicating molecular simulation data through a socket.
 It allows for two-way communication via IMD, a simulation engine sends data to a receiver and the receiver can send forces and certain requests back to the simulation engine.
