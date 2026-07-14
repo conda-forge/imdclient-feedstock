@@ -1,5 +1,5 @@
 {% set name = "imdclient" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/imdclient-{{ version }}.tar.gz
-  sha256: a460bb4c7bf34546ba75ad1f449ee5cb35d4dd3eaf63c399fbaa6a4a7d93cace
+  sha256: ec8adf3eca29a1b8abcf784226f2832aa63474bed1c6be9dc79d3e6dd0b8fc74
 
 build:
   noarch: python
